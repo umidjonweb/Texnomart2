@@ -1,28 +1,25 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <QuizzApp />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import QuizzApp from "./components/QuizzApp.vue";
 export default {
-  name: 'App',
+  name: "Darsvue2App",
   components: {
-    HelloWorld
-  }
-}
+    QuizzApp,
+  },
+  data() {
+    return {};
+  },
+
+  mounted() {},
+
+  methods: {},
+};
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss" scoped>
 </style>
